@@ -6,21 +6,21 @@ const quizData =[
         choice1:"Gredo",
         choice2:"Han",
         choice3:"the wookie",
-        correct:"2"
+        correct:"choice2"
     },
     {
         question:"Who did Han get the Mellinium Falcon from?", 
         choice1:"Lando",
         choice2:"Jabba the Hut",
         choice3:"A junker",
-        correct:"1"
+        correct:"choice1"
     }, 
     {
         question:"Who was concerned about the droid attack on the Wookies?",
         choice1:"Yoda",
         choice2:"Ki-Adi-Mundi",
         choice3:"No one cares about wookies",
-        correct:"2",
+        correct:"choice2",
     },
 
     {
@@ -28,21 +28,21 @@ const quizData =[
         choice1:"Uhhh...hey",
         choice2:"Jedi scum..",
         choice3:"General Kenobi!",
-        answer:"3",
+        answer:"choice3",
     },
     {
         question:"General Grevious collected what?",
         choice1:"lightsabers",
         choice2:"stamps",
         choice3:"coins",
-        correct:"1",
+        correct:"choice1",
     },
     {
         question:"what did order 66 do?",
         choice1:"kill the wookies",
         choice2:"kill the jedis",
         choice3:"go home",
-        correct:"2",
+        correct:"choice2",
     }]
     
 var TIMER=0;
@@ -92,14 +92,8 @@ function renderCounter(){
     }
 }
 
-//$("choice1").on("click", checkCorrect());{
-//if (choice1===correct){
-    //correctAnswers++
+$("choice1").on("click", checkCorrect());{
 
-//}
-
-//else wrongAnswers++
-//} 
 
 $("choice2").on("click", checkCorrect());{
 
@@ -109,9 +103,10 @@ $("choice3").on("click", checkCorrect());{
 
 }
 
-//var correctAnswers=0;
-   // for (let correctAnswers = 0; correctAnswers < array.length; correctAnswers++) {
-        //const element = array correctAnswers];
-        
-    //}
-//}
+//$(document).checkCorrect(function() {
+  //  var counter={
+      //Score: 0,
+      //increament
+  //}
+
+   // if {}
